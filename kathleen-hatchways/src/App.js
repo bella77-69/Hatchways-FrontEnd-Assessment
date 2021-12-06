@@ -11,7 +11,6 @@ const App = () => {
   async function fetchURL(url) {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data.students)
     setStudentData(data.students)
   }
 
@@ -32,17 +31,12 @@ const App = () => {
 
   return(
       <div>
-        <h1> TEST </h1>
-
-
             {studentData.map((student) => { 
-              
-              // console.log(student.firstName)
                 return <Students
                 key={student.id.toString()}
                 img={student.pic}
-                firstName={student.firstName}
-                lastName={student.lastName}
+                firstName={student.firstName.toUpperCase()}
+                lastName={student.lastName.toUpperCase()}
                 email={student.email}
                 company={student.company}
                 skill={student.skill}

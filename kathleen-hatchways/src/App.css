@@ -1,5 +1,35 @@
 .App {
+  font-family: 'Raleway', sans-serif;
+  background-color: black;
+  display: grid;
+  grid-row-gap: 10px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
   text-align: center;
+  background-color: red;
+  justify-content: right;
+  display: flex;
+  width: 50em;
+  grid-area: content;
+  border: 2px solid lightslategray
+
+}
+img {
+  float: left;
+  margin-right: 10px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+}
+.info {
+  
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  line-height: 1.3em;
 }
 
 .App-logo {

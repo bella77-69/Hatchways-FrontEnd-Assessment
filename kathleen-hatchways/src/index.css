@@ -13,3 +13,50 @@ code {
 }
 
 
+.App {
+  font-family: 'Raleway', sans-serif;
+  background-color: lightgray;
+  display: grid;
+  grid-row-gap: 1px;
+  align-content: right;
+  width: 100vw;
+  height: 100vh;
+  margin-left: 15em;
+}
+
+.container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 50%;
+  grid-area: content;
+  border: 2px solid lightslategray;
+  margin: auto;
+}
+
+img {
+  margin-right: 10px;
+  border-style: 1px solid black;
+  border-radius: 50%;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+.info {
+  font-weight: bold;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  line-height: 2.5em;
+  padding-left: 1.3em;
+}
+
+
+
+
+
+
