@@ -55,6 +55,28 @@ h1 {
   padding-left: 1.3em;
 }
 
+.search {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 5px;
+  margin-bottom: 1.5em;
+  display: flex;
+  align-items: center;
+
+  width: 50%;
+  grid-area: content;
+  margin: auto;
+}
+
+.search input{
+  border: none;
+  background:white;
+}
+
+.search input:focus{
+  outline: none;
+}
 
 
 
