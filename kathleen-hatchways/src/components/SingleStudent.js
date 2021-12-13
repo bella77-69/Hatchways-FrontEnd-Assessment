@@ -28,20 +28,43 @@ const SingleStudent = ({
   }
 
   return (
-    <div className="singleContainer">
+    <div className= 'singleStudent'>
       <img src={img} className="img" alt="avatar" width="150" height="150" />
-      <div className="name">
+      <div className="name"></div>
         <h1> {fullName}</h1>
+        <button
+          className="button"
+          onClick={() => {
+            setShowGrades(!showGrades);
+          }}
+        >
+          {showGrades ? "-" : "+"}
+        </button>
         <div className="info"> Email: {email} </div>
         <div className="info"> Company: {company} </div>
         <div className="info"> Skill: {skill} </div>
         <div className="info"> Average: {average}%</div>
+
         <div>
+          {showGrades &&
+            grades.map((grade, index) => {
+              return (
+                <div className= 'testItem' key={grade + " " + index}>
+                  <div>
+                    {" "}
+                    Test {index + 1} : {grade}%{" "}
+                  </div>
+                </div>
+              );
+            })}
+        </div>
+        <div className= 'tagContainer'>
+          
           {" "}
           {
             student.tags.map((tag, index) => {
               return (
-                <div className="tags" key={student.id + " " + tag}>
+                <div className= 'tags' key={student.id + " " + tag}>
                   {tag}
                 </div>
               );
@@ -64,29 +87,8 @@ const SingleStudent = ({
             className="tagAdder"
           />
         </div>
-        <div>
-          {showGrades &&
-            grades.map((grade, index) => {
-              return (
-                <div key={grade + " " + index}>
-                  <span className="testColumn">
-                    {" "}
-                    Test {index + 1} : {grade}%{" "}
-                  </span>
-                </div>
-              );
-            })}
-        </div>
       </div>
-      <button
-        className="button"
-        onClick={() => {
-          setShowGrades(!showGrades);
-        }}
-      >
-        {showGrades ? "-" : "+"}
-      </button>
-    </div>
+
   );
 };
 

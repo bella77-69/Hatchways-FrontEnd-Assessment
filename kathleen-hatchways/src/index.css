@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -22,40 +22,35 @@ code {
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 25px;
-
+  max-width: 800px;
   background-color: white;
   width: 70%;
   margin: auto; 
   border: 1px solid lightgray;
-
-
 }
 
 img {
   align-items: left;
   border: 1px solid lightgray;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   position: static;
   float: left;
   padding: 10px;
-  margin: 20px;
+  margin:10px;
 }
 
 
+
 .info {
-  font-weight: bold;
   color: black;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
-  font-weight: bold;
   line-height: 1.7em;
-  padding-left: 1.3em;
   align-content: center;
   align-items: center;
   justify-content: center;
-
 }
 
 .name {
@@ -100,32 +95,29 @@ img {
   height: 30px;
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
-
 }
 
 .searchTag input:focus{
   outline: none;
 }
 
-.testColumn {
+.testItem{
   display: flex;
-  padding-left: 20px;
-  padding-top: 2px;
-  justify-content: center;
-  align-items: left;
-  font-family: 'Raleway', sans-serif;
-  width: auto;
+  margin-left: max(162px);
 }
 
 .tagAdder {
   padding-left: 10px;
-  margin-left: 140px;
-  margin-top: 10px;
   padding-bottom: 5px;
+  padding-top: 10px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 10px;
+  display: flex;
+  margin-left: 160px;
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid black;
   background:white;
   width: fit-content;
 }
@@ -138,7 +130,6 @@ img {
   border-right: none;
   border-bottom: 1px solid black;
   background:white;
-  border-bottom: 1px solid lightgray;
   outline: none;
 }
 
@@ -153,9 +144,25 @@ img {
   width: fit-content;
   background-color: lightgrey;
   border-radius: 4px;
-  margin-right: auto;
-  margin-left: 210px;
-  text-align: center;
-  margin-top: 10px;
+  align-content: center;
 }
 
+.tagContainer {
+  margin-left:160px;
+}
+
+.button {
+  color: darkgray;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+  justify-content: space-between;
+  float: right;
+}
+
+.button input:focus{
+  color: darkgray;
+  font-size: 50px;
+  border: none;
+  cursor: pointer;
+}

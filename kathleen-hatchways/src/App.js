@@ -108,13 +108,13 @@ const App = () => {
 
   return (
     <div className="container">
-      <div className="searchName" font-family="Raleway" font-size="100px">
+      <div className="searchName" fontFamily="Raleway" fontSize="100px">
         <SearchName
           handleSearchName={setStudentNameFilter}
           placeholder="Search by name"
         />
       </div>
-      <div className="searchTag" font-family="Raleway">
+      <div className="searchTag" fontFamily="Raleway">
         <SearchTag handleSearchTag={setTagFilter} placeholder="Search by tag" />
       </div>
       <div>
