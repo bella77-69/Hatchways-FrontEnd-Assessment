@@ -1,10 +1,6 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Raleway', sans-serif;
 }
 
 code {
@@ -16,69 +12,150 @@ code {
 .App {
   font-family: 'Raleway', sans-serif;
   background-color: lightgray;
-  display: grid;
-  grid-row-gap: 1px;
-  align-content: right;
   width: 100vw;
   height: 100vh;
   margin-left: 15em;
 }
 
 .container {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 25px;
+
   background-color: white;
-  width: 50%;
-  grid-area: content;
-  border: 2px solid lightslategray;
-  margin: auto;
+  width: 70%;
+  margin: auto; 
+  border: 1px solid lightgray;
+
+
 }
 
 img {
-  margin-right: 10px;
-  border-style: 1px solid black;
+  align-items: left;
+  border: 1px solid lightgray;
   border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  position: static;
+  float: left;
+  padding: 10px;
+  margin: 20px;
 }
 
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: bold;
-}
+
 .info {
   font-weight: bold;
   color: black;
   font-family: 'Raleway', sans-serif;
   font-size: 15px;
-  line-height: 2.5em;
+  font-weight: bold;
+  line-height: 1.7em;
   padding-left: 1.3em;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
 }
 
-.search {
-  display: flex;
-  align-items: center;
-  background-color: white;
-  padding: 5px;
-  margin-bottom: 1.5em;
-  display: flex;
-  align-items: center;
-
-  width: 50%;
-  grid-area: content;
-  margin: auto;
+.name {
+  color: black;
+  font-weight: semi-bold 600;
+  font-family: 'Raleway', sans-serif;
 }
 
-.search input{
+
+.searchName {
+  font-family: 'Raleway', sans-serif;
+  align-items:left;
+  justify-content: left;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
+
+.searchName input{
   border: none;
   background:white;
+  height: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 }
 
-.search input:focus{
+.searchName input:focus{
   outline: none;
 }
 
+.searchTag {
+  padding-bottom: 10px;
+  align-items:left;
+  justify-content: left;
+  height: 30px;
+  border-bottom: 1px solid lightgray;
+  padding: 10px;
+}
 
+.searchTag input{
+  border: none;
+  background:white;
+  height: 30px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
 
+}
 
+.searchTag input:focus{
+  outline: none;
+}
+
+.testColumn {
+  display: flex;
+  padding-left: 20px;
+  padding-top: 2px;
+  justify-content: center;
+  align-items: left;
+  font-family: 'Raleway', sans-serif;
+  width: auto;
+}
+
+.tagAdder {
+  padding-left: 10px;
+  margin-left: 140px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid lightgray;
+  background:white;
+  width: fit-content;
+}
+
+.tagAdder input{
+  padding-left: 15px;
+  padding-bottom: 5px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid black;
+  background:white;
+  border-bottom: 1px solid lightgray;
+  outline: none;
+}
+
+.tagAdder input:focus{
+  outline: none;
+}
+
+.tags {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  width: fit-content;
+  background-color: lightgrey;
+  border-radius: 4px;
+  margin-right: auto;
+  margin-left: 210px;
+  text-align: center;
+  margin-top: 10px;
+}
 

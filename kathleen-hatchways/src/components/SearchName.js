@@ -1,15 +1,15 @@
 import React from "react";
 
-const Search = ({handleSearchName}) => {
+const SearchName = ({handleSearchName, placeholder}) => {
     return (
         <div className = 'search'> 
             <input 
                 onChange= {(event) => handleSearchName(event.target.value)}
                 type= 'text'
-                placeholder= 'Search by name'
+                placeholder= {placeholder}
             />
         </div>
     )
 }
 
-export default Search;
+export default SearchName;
